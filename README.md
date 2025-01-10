@@ -19,11 +19,11 @@ In the face of rapid urbanization and the growing impacts of climate change, cit
 ### Week 2. Vector Data operations
 - Read write shapefile using `geopandas`
 - Combination of `fiona` and `shapely` for shapefile operations
-- 
 
 ### Week 3. Raster data operations
-
-
+- download raster data, aerial imagery
+- raster data manipulation, `clip`, `mosaic`
+- overlay `vector` data on `raster`
 
 ### Week 4. Urban flood mapping using DEM
 
