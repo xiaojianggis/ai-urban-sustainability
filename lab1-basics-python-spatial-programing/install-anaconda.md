@@ -26,7 +26,26 @@ For Mac, go to the `terminal`,
 <img src="images/mac-terminal.png" title="A cute kitten" height="300" />
 
 2. Type in `conda info -e` in your terminal, you should see the `base` environment. The `base` is the default Python environment. We usually don't install Python modules in the `base`. 
-3. Create a customized virutal environment called `geospatial`, `conda create --name geospatial numpy shapely matplotlib rasterio fiona pandas ipython pyproj gdal jupyter geopandas`. Using this command, you can install most needed modules in this class. It is pretty straightforward to install the modules you need in Anaconda. In most cases just type in `conda install name_module`.
+3. Create a customized virutal environment called `geospatial`, `conda create --name geospatial numpy shapely matplotlib rasterio fiona pandas ipython pyproj gdal jupyter geopandas`. Using this command, you can install most needed modules in this class. It is pretty straightforward to install the modules you need in Anaconda. In most cases just type in `conda install name_module`. If you have any problem with the command `conda create ...`, you can use another option based on the `yml`file. Firstly remove the `geospatial` module, `conda remove --name geospatial --all`. Then install the module again, `conda env create -f env.yml` 
+
+Your `yml` file looks like, 
+```
+name: geospatial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - geopandas=0.13.2
+  - rasterio=1.3.8
+  - gdal=3.7
+  - pandas=1.5.3
+  - numpy
+  - matplotlib
+  - jupyterlab
+  - notebook
+  - ipykernel
+```
 
 
 ## 3. Start Jupyter Notebook and write Python code

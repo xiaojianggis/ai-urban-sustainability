@@ -17,8 +17,10 @@ In the face of rapid urbanization and the growing impacts of climate change, cit
 
 
 ### Week 2. Vector Data operations
-- Read write shapefile using `geopandas`
-- Combination of `fiona` and `shapely` for shapefile operations
+We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis on shapefile. All the required files are saved at ([here](lab2-vector-data-manipulation/data.zip)). Please download it and unzip to your lab2 working directory with your script. 
+- Read write shapefile using `geopandas` ([link](lab2-vector-data-manipulation/1.%20geopandas-spatial-analysis.ipynb))
+- Combination of `fiona` and `shapely` for shapefile operations ([link](lab2-vector-data-manipulation/2.%20fiona-shapefile.ipynb))
+- Advanced analysis of features, `intersects`, `rtree` ([link](lab2-vector-data-manipulation/3.%20advanced_analysis_fiona_shapely.ipynb))
 
 ### Week 3. Raster data operations
 - download raster data, aerial imagery
