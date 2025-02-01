@@ -24,8 +24,8 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 
 ### Week 3. Raster data operations
 - download nationally availalbe aerial imagery ([link](lab3-raster-data-manipulation/1.%20naip-downloader.ipynb))
-- raster data manipulation, `clip`, `mosaic`
-- overlay `vector` data on `raster`
+- raster data manipulation, `read`, `write`, and `display` raster data ([link](lab3-raster-data-manipulation/2.%20raster-data-manipulation.ipynb)).
+- `clip`, `mosaic`, and `zonal` analysis ([link](lab3-raster-data-manipulation/3.clip-mosaic-zonal-analysis.ipynb)).
 
 ### Week 4. Urban flood mapping using DEM
 
