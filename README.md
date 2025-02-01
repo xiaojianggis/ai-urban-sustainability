@@ -23,7 +23,7 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - Advanced analysis of features, `intersects`, `rtree` ([link](lab2-vector-data-manipulation/3.%20advanced_analysis_fiona_shapely.ipynb))
 
 ### Week 3. Raster data operations
-- download raster data, aerial imagery
+- download nationally availalbe aerial imagery ([link](lab3-raster-data-manipulation/1.%20naip-downloader.ipynb))
 - raster data manipulation, `clip`, `mosaic`
 - overlay `vector` data on `raster`
 
