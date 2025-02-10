@@ -28,7 +28,8 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - `clip`, `mosaic`, and `zonal` analysis ([link](lab3-raster-data-manipulation/3.clip-mosaic-zonal-analysis.ipynb)).
 
 ### Week 4. Urban flood mapping using DEM
-
+- Download `DEM` files automatically ([link](lab4-urban-flood-mapping/download-dem.ipynb))
+- Run `HAND` model to estimate potential flooding ([link](lab4-urban-flood-mapping/urban-flood-vulnerability.ipynb))
 
 ### Week 5. GPU programming for shade mapping
 - Setup the PyCUDA environment
