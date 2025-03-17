@@ -44,16 +44,16 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - Deep neural network for regression problem
 - Building convolution neural network for image classification
 
-### Lab 8. Build a UNet for building extraction
+### Lab 8. Mask-RCNN for object detection
+- familiar with the Mask-RCNN model for object detection
+- create your own labels data using `labelme` tool
+- fine-tune the Mask-RCNN model for new object detection
+
+### Lab 9. Build a UNet for building extraction
 - build your own CNN network 
 - prepare the datasets for the CNN model
 - train your CNN model for building detection
 - extract buildings based on the trained model
-
-### Lab 9. Mask-RCNN for object detection
-- familiar with the Mask-RCNN model for object detection
-- create your own labels data using `labelme` tool
-- fine-tune the Mask-RCNN model for new object detection
 
 ### Lab 10. Image segmentation on street-level image
 
