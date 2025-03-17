@@ -40,7 +40,9 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - familiar with `scikit` for machine learning algorithms ([link](lab6-machine-learning/MachineLearning_GettingStarted.ipynb))
 - land use/cover mapping on the NAIP images ([link](lab6-machine-learning/machine-learning-land-cover-mapping-penn.ipynb))
 
-### Lab 7. Deep neural network
+### Lab 7. Deep neural network (on Co-lab)
+- Deep neural network for regression problem
+- Building convolution neural network for image classification
 
 ### Lab 8. Build a UNet for building extraction
 - build your own CNN network 
