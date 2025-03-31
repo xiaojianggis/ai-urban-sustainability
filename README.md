@@ -50,10 +50,8 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - fine-tune the Mask-RCNN model for new object detection
 
 ### Lab 9. Build a UNet for building extraction
-- build your own CNN network 
-- prepare the datasets for the CNN model
-- train your CNN model for building detection
-- extract buildings based on the trained model
+- prepare the datasets for the CNN model ([link](lab8-unet/1.data-preparation.ipynb))
+- train your CNN model for building detection ([link](lab8-unet/2.model-trainning-prediction.ipynb))
 
 ### Lab 10. Image segmentation on street-level image
 
