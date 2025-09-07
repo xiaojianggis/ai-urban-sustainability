@@ -337,3 +337,5 @@ if __name__ == '__main__':
     train_loss, valid_loss = train(unet, train_dl, valid_dl, loss_fn, opt, acc_metric, epochs=50)
 
     torch.save(unet.state_dict(), 'unet_build_model100epc_aug.pth')
+    
+    
