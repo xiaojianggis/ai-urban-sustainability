@@ -13,7 +13,7 @@ In the face of rapid urbanization and the growing impacts of climate change, cit
 - Urban Analytics: Understand the complexities of urban systems and how AI can help analyze, optimize, and improve city planning, mobility, and infrastructure development.
 - Spatial Data Science: Learn to work with geospatial data, including remote sensing data, street-level images, and digital maps, to analyze urban landscapes and phenomena.
 - Machine learning: Apply advanced machine learning techniques to urban data for tasks such as land use classification, predictive modeling, and extracting valuable insights from satellite and street-level imagery.
-- Cases studies: using AI for different urban applications.
+- Cases studies: using AI for different  applications.
 
 
 ### Lab 1. Basics of Python programming
