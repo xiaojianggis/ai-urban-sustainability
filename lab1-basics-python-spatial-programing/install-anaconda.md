@@ -12,7 +12,7 @@ Select the right Anaconda for your computer.>
 
 <img src="images/wind-install.png" title="A cute kitten" height="300" />
 
-3. **Check your installation**. When you installation is done, you can then check if you have the Anaconda installed successfully. For Windows, press windows button and see if you have `Anaconda Prompt`. For Mac, go to your terminal and type in `conda`. 
+3. **Check your installation**. When you installation is done, you can then check if you have the Anaconda installed successfully. For Windows, press windows button and see if you have `Anaconda Powershell Prompt`. For Mac, go to your terminal and type in `conda`. 
 
 
 ## 2.Be familiar with Anaconda
