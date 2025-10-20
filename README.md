@@ -37,10 +37,9 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - Download `DEM` files automatically ([link](lab4-urban-flood-mapping/download-dem.ipynb))
 - Run `HAND` model to estimate potential flooding ([link](lab4-urban-flood-mapping/urban-flood-vulnerability.ipynb))
 
-### Lab 5. GPU programming for shade mapping
-- Setup the PyCUDA environment
-- Write your very first CUDA code
-- Map the shade distribution based on DSM
+### Lab 5. GPU programming for shade mapping 
+- Setup the PyCUDA environment and write your very first CUDA code ([link](https://colab.research.google.com/drive/1l9qMxAMcQ9pu-pqX6SUevNnK9kmFMzeH))
+- Map the shade distribution based on DSM ([link](https://colab.research.google.com/drive/1hFVFv5qaKtzUhuFj9MSlp3odBuKTwQoP))
 
 ### Lab 6. Basics of machine learing
 - familiar with `scikit` for machine learning algorithms ([link](lab6-machine-learning/MachineLearning_GettingStarted.ipynb))
