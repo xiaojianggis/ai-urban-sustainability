@@ -47,8 +47,9 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - land use/cover mapping on the NAIP images ([link](lab6-machine-learning/machine-learning-land-cover-mapping-penn.ipynb))
 
 ### Lab 7. Deep neural network (on Co-lab)
-- Deep neural network for regression problem
-- Building convolution neural network for image classification
+- Deep neural network for regression problem ([link](https://colab.research.google.com/drive/1GxjaO93_lWo433GFk4hDNE4ebCKhFZ_7))
+- Building convolution neural network for image classification ([link](https://colab.research.google.com/drive/1S9GDD1vCLVTzVuQsnWO1jyI5rIjx8ktK
+))
 
 ### Lab 8. Mask-RCNN for object detection
 - familiar with the Mask-RCNN model for object detection
