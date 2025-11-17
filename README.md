@@ -65,4 +65,6 @@ We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis 
 - fork the PSPNet for the image segmentation
 - create map based on the segmented image and the metadata
 
-### Lab 11. LLMS for Urban Planning
+### Lab 11. Large langue models (LLMs)
+- be familiar with the LLMs and their applications
+- use openAI API for text and image analysis ([link](lab11-llms/openai-llm.ipynb))
