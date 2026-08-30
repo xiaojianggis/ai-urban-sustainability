@@ -1,70 +1,165 @@
-<div style="display: flex; align-items: center; gap: 16px;">
-  <img src="logo.png" alt="AI for Urban Sustainability" width="140" style="flex-shrink: 0;" />
-  <h1 style="margin: 0;">AI for Urban Sustainability</h1>
+<div align="center">
+  <img src="logo.png" alt="AI for Urban Sustainability logo" width="160">
+
+# AI for Urban Sustainability
+
+### Spatial data science, machine learning, and deep learning for more resilient cities
+
+[![Course Materials](https://img.shields.io/badge/course-materials-2F6F73?style=flat-square)](#course-materials)
+[![Python 3.10](https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Conda](https://img.shields.io/badge/environment-conda-44A833?style=flat-square&logo=anaconda&logoColor=white)](env.yml)
+
 </div>
 
+---
 
-The rapidly growing urban populations around the world demand innovative solutions to ensure cities remain resilient, sustainable, and livable. This course, <strong>AI for Urban Sustainability</strong>, is designed to equip students with cutting-edge techniques in urban analytics, spatial data science, and deep learning, with a focus on addressing the environmental, social, and economic challenges faced by cities.
-The rapidly growing urban populations around the world demand innovative solutions to ensure cities remain resilient, sustainable, and livable. This course, *AI for Urban Sustainability*, is designed to equip students with cutting-edge techniques in urban analytics, spatial data science, and deep learning, with a focus on addressing the environmental, social, and economic challenges faced by cities.
+## About the course
 
-In the face of rapid urbanization and the growing impacts of climate change, cities around the world are under increasing pressure to become more sustainable, resilient, and equitable. AI for Urban Sustainability is a forward-looking course that explores the transformative role of artificial intelligence in tackling these urban challenges. Designed for students and professionals interested in leveraging advanced technologies to shape the cities of tomorrow, this course offers a comprehensive overview of how AI can drive sustainable urban development.
+Cities face growing environmental, social, and economic pressures—from climate change and rapid urbanization to mobility, infrastructure, and equity challenges. **AI for Urban Sustainability** explores how artificial intelligence and spatial data science can help us understand these complex systems and design more sustainable, resilient, and livable cities.
 
-### Key topics covered:
-- Urban Analytics: Understand the complexities of urban systems and how AI can help analyze, optimize, and improve city planning, mobility, and infrastructure development.
-- Spatial Data Science: Learn to work with geospatial data, including remote sensing data, street-level images, and digital maps, to analyze urban landscapes and phenomena.
-- Machine learning: Apply advanced machine learning techniques to urban data for tasks such as land use classification, predictive modeling, and extracting valuable insights from satellite and street-level imagery.
-- Cases studies: using AI for different  applications.
+Through hands-on notebooks and applied case studies, students work with geospatial data, remote sensing imagery, street-level images, and urban datasets. The course progresses from Python and spatial analysis fundamentals to GPU computing, machine learning, computer vision, and large language models.
 
+## What you will learn
 
-### Lab 1. Basics of Python programming
-- install Anaconda ([link](lab1-basics-python-spatial-programing/install-anaconda.md))
-- configure the Jupyter notebook notebook ([link](lab1-basics-python-spatial-programing/jupyter-notebook.md))
-- data structures, loops, read and write txt files ([link](lab1-basics-python-spatial-programing/Python-basics.ipynb))
+- Analyze urban systems using vector, raster, and remote-sensing data
+- Build reproducible spatial workflows with Python and Jupyter
+- Apply machine-learning methods to land-use and land-cover mapping
+- Develop deep-learning models for object detection and image segmentation
+- Use GPU computing for high-performance urban analysis
+- Explore practical applications of large language models in urban research
 
+## Technology stack
 
-### Lab 2. Vector Data operations
-We will use `geopandas`, `fiona`, `shapely` for conducting the spatial analysis on shapefile. All the required files are ([here](lab2-vector-data-manipulation/data.zip)). Please download it and unzip to your lab2 working directory with your script. 
-- Read write shapefile using `geopandas` ([link](lab2-vector-data-manipulation/1.%20geopandas-spatial-analysis.ipynb))
-- Combination of `fiona` and `shapely` for shapefile operations ([link](lab2-vector-data-manipulation/2.%20fiona-shapefile.ipynb))
-- Advanced analysis of features, `intersects`, `rtree` ([link](lab2-vector-data-manipulation/3.%20advanced_analysis_fiona_shapely.ipynb))
+`Python` · `GeoPandas` · `Fiona` · `Shapely` · `Rasterio` · `GDAL` · `scikit-learn` · `PyCUDA` · `Jupyter`
 
-### Lab 3. Raster data operations
-- download nationally availalbe aerial imagery ([link](lab3-raster-data-manipulation/1.%20naip-downloader.ipynb))
-- raster data manipulation, `read`, `write`, and `display` raster data ([link](lab3-raster-data-manipulation/2.%20raster-data-manipulation.ipynb)).
-- `clip`, `mosaic`, and `zonal` analysis ([link](lab3-raster-data-manipulation/3.clip-mosaic-zonal-analysis.ipynb)).
+## Getting started
 
-### Lab 4. Urban flood mapping using DEM
-- Download `DEM` files automatically ([link](lab4-urban-flood-mapping/download-dem.ipynb))
-- Run `HAND` model to estimate potential flooding ([link](lab4-urban-flood-mapping/urban-flood-vulnerability.ipynb))
+1. Clone this repository:
 
-### Lab 5. GPU programming for shade mapping 
-- Setup the PyCUDA environment and write your very first CUDA code ([link](https://colab.research.google.com/drive/1l9qMxAMcQ9pu-pqX6SUevNnK9kmFMzeH))
-- Map the shade distribution based on DSM ([link](https://colab.research.google.com/drive/1hFVFv5qaKtzUhuFj9MSlp3odBuKTwQoP))
+   ```bash
+   git clone https://github.com/xiaojianggis/ai-urban-sustainability.git
+   cd ai-urban-sustainability
+   ```
 
-### Lab 6. Basics of machine learing
-- familiar with `scikit` for machine learning algorithms ([link](lab6-machine-learning/MachineLearning_GettingStarted.ipynb))
-- land use/cover mapping on the NAIP images ([link](lab6-machine-learning/machine-learning-land-cover-mapping-penn.ipynb))
+2. Create and activate the course environment:
 
-### Lab 7. Deep neural network (on Co-lab)
-- Deep neural network for regression problem ([link](https://colab.research.google.com/drive/1GxjaO93_lWo433GFk4hDNE4ebCKhFZ_7))
-- Building convolution neural network for image classification ([link](https://colab.research.google.com/drive/1S9GDD1vCLVTzVuQsnWO1jyI5rIjx8ktK
-))
+   ```bash
+   conda env create -f env.yml
+   conda activate geospatial
+   ```
 
-### Lab 8. Mask-RCNN for object detection
-- familiar with the Mask-RCNN model for object detection
-- create your own labels data using `labelme` tool
-- fine-tune the Mask-RCNN model for new object detection
+3. Start JupyterLab:
 
-### Lab 9. Build a UNet for building extraction
-- prepare the datasets for the CNN model ([link](lab8-unet/1.data-preparation.ipynb))
-- train your CNN model for building detection ([link](lab8-unet/2.model-trainning-prediction.ipynb))
+   ```bash
+   jupyter lab
+   ```
 
-### Lab 10. Image segmentation on street-level image
+New to the setup process? See the guides for [installing Anaconda](lab1-basics-python-spatial-programing/install-anaconda.md) and [configuring Jupyter Notebook](lab1-basics-python-spatial-programing/jupyter-notebook.md).
 
-- prepare the street-level image
-- fork the PSPNet for the image segmentation
-- create map based on the segmented image and the metadata
+## Course materials
 
-### Lab 11. Large langue models (LLMs)
-- be familiar with the LLMs and their applications
-- use openAI API for text and image analysis ([link](lab11-llms/openai-llm.ipynb))
+| Lab | Theme | Core concepts |
+|:---:|---|---|
+| 01 | [Python programming](#lab-01--python-programming-fundamentals) | Data structures, loops, and file I/O |
+| 02 | [Vector data](#lab-02--vector-data-operations) | GeoPandas, Fiona, Shapely, and spatial relationships |
+| 03 | [Raster data](#lab-03--raster-data-operations) | NAIP imagery, clipping, mosaicking, and zonal analysis |
+| 04 | [Urban flood mapping](#lab-04--urban-flood-mapping-with-dems) | Digital elevation models and HAND |
+| 05 | [GPU programming](#lab-05--gpu-programming-for-shade-mapping) | PyCUDA and urban shade modeling |
+| 06 | [Machine learning](#lab-06--machine-learning-fundamentals) | scikit-learn and land-cover classification |
+| 07 | [Deep neural networks](#lab-07--deep-neural-networks) | Regression and convolutional neural networks |
+| 08 | [Object detection](#lab-08--mask-r-cnn-for-object-detection) | Mask R-CNN, LabelMe, and fine-tuning |
+| 09 | [Building extraction](#lab-09--u-net-for-building-extraction) | Dataset preparation, U-Net training, and prediction |
+| 10 | [Street-level imagery](#lab-10--street-level-image-segmentation) | PSPNet, semantic segmentation, and mapping |
+| 11 | [Large language models](#lab-11--large-language-models) | Text and image analysis with the OpenAI API |
+
+### Lab 01 · Python programming fundamentals
+
+- [Install Anaconda](lab1-basics-python-spatial-programing/install-anaconda.md)
+- [Configure Jupyter Notebook](lab1-basics-python-spatial-programing/jupyter-notebook.md)
+- [Practice data structures, loops, and text-file I/O](lab1-basics-python-spatial-programing/Python-basics.ipynb)
+
+### Lab 02 · Vector data operations
+
+Use GeoPandas, Fiona, and Shapely to conduct spatial analysis with shapefiles. Download the [complete lab dataset](lab2-vector-data-manipulation/data.zip), then extract it into your Lab 02 working directory.
+
+- [Read, write, and analyze shapefiles with GeoPandas](lab2-vector-data-manipulation/1.%20geopandas-spatial-analysis.ipynb)
+- [Work with shapefiles using Fiona and Shapely](lab2-vector-data-manipulation/2.%20fiona-shapefile.ipynb)
+- [Perform advanced feature, intersection, and spatial-index analysis](lab2-vector-data-manipulation/3.%20advanced_analysis_fiona_shapely.ipynb)
+
+### Lab 03 · Raster data operations
+
+- [Download nationally available aerial imagery](lab3-raster-data-manipulation/1.%20naip-downloader.ipynb)
+- [Read, write, display, and manipulate raster data](lab3-raster-data-manipulation/2.%20raster-data-manipulation.ipynb)
+- [Run clipping, mosaicking, and zonal analysis workflows](lab3-raster-data-manipulation/3.clip-mosaic-zonal-analysis.ipynb)
+
+### Lab 04 · Urban flood mapping with DEMs
+
+- [Download digital elevation model data automatically](lab4-urban-flood-mapping/download-dem.ipynb)
+- [Estimate potential flooding with the HAND model](lab4-urban-flood-mapping/urban-flood-vulnerability.ipynb)
+
+### Lab 05 · GPU programming for shade mapping
+
+- [Set up PyCUDA and write your first CUDA program](https://colab.research.google.com/drive/1l9qMxAMcQ9pu-pqX6SUevNnK9kmFMzeH)
+- [Map shade distribution from a digital surface model](https://colab.research.google.com/drive/1hFVFv5qaKtzUhuFj9MSlp3odBuKTwQoP)
+
+### Lab 06 · Machine learning fundamentals
+
+- [Get started with machine learning in scikit-learn](lab6-machine-learning/MachineLearning_GettingStarted.ipynb)
+- [Map land use and land cover from NAIP imagery](lab6-machine-learning/machine-learning-land-cover-mapping-penn.ipynb)
+
+### Lab 07 · Deep neural networks
+
+These exercises run in Google Colab.
+
+- [Build a deep neural network for regression](https://colab.research.google.com/drive/1GxjaO93_lWo433GFk4hDNE4ebCKhFZ_7)
+- [Build a convolutional neural network for image classification](https://colab.research.google.com/drive/1S9GDD1vCLVTzVuQsnWO1jyI5rIjx8ktK)
+
+### Lab 08 · Mask R-CNN for object detection
+
+- Become familiar with the Mask R-CNN object-detection architecture
+- Create custom labeled data with LabelMe
+- Fine-tune Mask R-CNN for a new detection task
+
+### Lab 09 · U-Net for building extraction
+
+- [Prepare training datasets for the convolutional neural network](lab8-unet/1.data-preparation.ipynb)
+- [Train the model and generate building predictions](lab8-unet/2.model-trainning-prediction.ipynb)
+
+> **Repository note:** The Lab 09 materials are currently stored in the `lab8-unet` directory.
+
+### Lab 10 · Street-level image segmentation
+
+- Prepare street-level imagery for analysis
+- Adapt PSPNet for semantic segmentation
+- Create maps from segmented imagery and associated metadata
+
+### Lab 11 · Large language models
+
+- Explore large language models and their urban applications
+- [Use the OpenAI API for text and image analysis](lab11-llms/openai-llm.ipynb)
+
+---
+
+## Repository structure
+
+```text
+ai-urban-sustainability/
+├── lab1-basics-python-spatial-programing/
+├── lab2-vector-data-manipulation/
+├── lab3-raster-data-manipulation/
+├── lab4-urban-flood-mapping/
+├── lab6-machine-learning/
+├── lab8-unet/
+├── lab11-llms/
+├── env.yml
+└── README.md
+```
+
+## Using these materials
+
+Each lab is designed as a practical, notebook-based exercise. Open the linked notebook, read the setup notes, and keep its supporting data in the same lab directory unless the instructions specify otherwise. Google Colab links are provided for exercises that benefit from hosted GPU resources.
+
+<div align="center">
+  <sub>AI for Urban Sustainability · University of Pennsylvania</sub>
+</div>
