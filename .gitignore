@@ -1,1 +1,2 @@
 *.tif
+!lab6-machine-learning/testimg.tif
