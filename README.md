@@ -117,9 +117,9 @@ These exercises run in Google Colab.
 
 ### Lab 08 · Mask R-CNN for object detection
 
-- Become familiar with the Mask R-CNN object-detection architecture
-- Create custom labeled data with LabelMe
-- Fine-tune Mask R-CNN for a new detection task
+- [Become familiar with the Mask R-CNN object-detection architecture](https://colab.research.google.com/drive/1aviPNZeG6OSjDra7ALeyL67rwW-o09FS?usp=sharing)
+- [Create custom labeled data with LabelMe](https://github.com/wkentaro/labelme)
+- [YOLO](https://colab.research.google.com/drive/1XYByQYgE57ms2I_z9-zpVpu2V9eGIrQB?usp=sharing)
 
 ### Lab 09 · U-Net for building extraction
 
