@@ -126,8 +126,8 @@ Use U-Net for building extraction, then explore semantic segmentation of street-
 
 - [Pretrained model for street-level image segmentation](https://colab.research.google.com/drive/1Jen8Uj4QUiyZEoQ2FlCiL4wDUl2102p7?usp=sharing)
 
-- [Prepare training datasets for the convolutional neural network](lab9-image-segmentation/1.data-preparation.ipynb)
-- [Train the model and generate building predictions](lab9-image-segmentation/2.model-trainning-prediction.ipynb)
+- [Prepare training datasets for the convolutional neural network](lab9-image-segmentation/1.data-preparation.ipynb) — [Open in Colab](https://colab.research.google.com/drive/1xa72fcEw0E6ml946e3ieYLeBmjQ0jsUd)
+- [Train the model and generate building predictions](lab9-image-segmentation/2.model-trainning-prediction.ipynb) — [Open in Colab](https://colab.research.google.com/drive/1Xo0_Xte7IRZN1aIz7GT1RTmqbVtWl02k)
 
 
 ### Lab 10 · Large language models
