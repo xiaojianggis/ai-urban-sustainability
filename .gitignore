@@ -1,2 +1,6 @@
 *.tif
 !lab6-machine-learning/testimg.tif
+
+# Local macOS metadata and Jupyter autosaves
+.DS_Store
+.ipynb_checkpoints/
