@@ -130,10 +130,11 @@ Use U-Net for building extraction, then explore semantic segmentation of street-
 - [Train the model and generate building predictions](lab9-image-segmentation/2.model-trainning-prediction.ipynb) — [Open in Colab](https://colab.research.google.com/drive/1Xo0_Xte7IRZN1aIz7GT1RTmqbVtWl02k)
 
 
-### Lab 10 · Large language models
+### Lab 10 · Understand Transformer
 
-- Explore large language models and their urban applications
-- [Use the OpenAI API for text and image analysis](lab10-llms/openai-llm.ipynb)
+- [Understand Transfomer](https://jalammar.github.io/illustrated-transformer/)
+- [Annotated-transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
+<!-- - [Use the OpenAI API for text and image analysis](lab10-llms/openai-llm.ipynb) -->
 
 ---
 
