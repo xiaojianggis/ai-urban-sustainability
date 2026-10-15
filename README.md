@@ -131,7 +131,7 @@ Use U-Net for building extraction, then explore semantic segmentation of street-
 
 
 ### Lab 10 · Understand Transformer
-
+Read the paper of [Attention is All You Need](https://papers.neurips.cc/paper/7181-attention-is-all-you-need.pdf) and the following two illustration and annotation. 
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Annotated-transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
 <!-- - [Use the OpenAI API for text and image analysis](lab10-llms/openai-llm.ipynb) -->
