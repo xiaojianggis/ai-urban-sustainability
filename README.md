@@ -136,6 +136,7 @@ Read the paper of [Attention is All You Need](https://papers.neurips.cc/paper/71
 - [Annotated-transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
 <!-- - [Use the OpenAI API for text and image analysis](lab10-llms/openai-llm.ipynb) -->
 
+- [OpenAI API](lab10-llms/OpenAI_API_Simple_Urban_Demos.ipynb)
 ---
 
 ## Repository structure
