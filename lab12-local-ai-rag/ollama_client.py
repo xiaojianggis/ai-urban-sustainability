@@ -9,6 +9,24 @@ import requests
 import config
 
 
+def _check(r, model=None):
+    """Turn Ollama's errors into messages that say exactly what to do."""
+    if r.ok:
+        return
+    try:
+        detail = r.json().get("error", r.text)
+    except ValueError:
+        detail = r.text
+    if r.status_code == 404 and model:
+        raise SystemExit(f"\nOllama does not have the model '{model}' yet.\n"
+                         f"Fix: run   ollama pull {model}   in a terminal, then try again.\n"
+                         f"(Ollama said: {detail})")
+    if "does not support tools" in str(detail):
+        raise SystemExit(f"\nThe model '{model}' cannot call tools, so it cannot run the agent.\n"
+                         f"Fix: set AGENT_MODEL in config.py to a tool-calling model, e.g. qwen3:4b or llama3.1:8b.")
+    raise SystemExit(f"\nOllama returned an error ({r.status_code}): {detail}")
+
+
 def chat(messages, model=None, tools=None, temperature=None):
     """Send a conversation to the chat model and return its reply message (a dict)."""
     body = {
@@ -20,7 +38,7 @@ def chat(messages, model=None, tools=None, temperature=None):
     if tools:
         body["tools"] = tools
     r = requests.post(f"{config.OLLAMA_URL}/api/chat", json=body, timeout=600)
-    r.raise_for_status()
+    _check(r, body["model"])
     return r.json()["message"]
 
 
@@ -35,7 +53,7 @@ def embed(texts, kind="document"):
         texts = [prefix + t for t in texts]
     r = requests.post(f"{config.OLLAMA_URL}/api/embed",
                       json={"model": config.EMBED_MODEL, "input": texts}, timeout=600)
-    r.raise_for_status()
+    _check(r, config.EMBED_MODEL)
     return r.json()["embeddings"]
 
 

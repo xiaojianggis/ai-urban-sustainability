@@ -102,11 +102,19 @@ r = requests.post("http://127.0.0.1:11434/api/chat", json={
 print(r.json()["message"]["content"])
 ```
 
-> **Code from Lab 10/11 works too.** Ollama speaks the same API as OpenAI. Change two lines:
+**What is `http://127.0.0.1:11434`?** `127.0.0.1` means "this computer" (also called `localhost`),
+and `11434` is the door (port) Ollama listens on. You don't set it up: it's Ollama's default, and it
+starts when the Ollama app is open. To check, open <http://127.0.0.1:11434> in your browser.
+It should say **"Ollama is running"**.
+
+> **Optional — reusing OpenAI code from earlier labs.** Ollama also understands the OpenAI API format.
+> If you have code written with the `openai` Python package (`pip install openai`), you can point it at
+> your laptop instead of OpenAI's servers by changing two lines:
 > ```python
-> client = OpenAI(base_url="http://127.0.0.1:11434/v1", api_key="ollama")
+> client = OpenAI(base_url="http://127.0.0.1:11434/v1", api_key="ollama")  # api_key is ignored, any text works
 > MODEL = "qwen3:4b"
 > ```
+> You don't need this for Lab 12. Our scripts talk to Ollama directly with `requests`.
 
 ### Why bother? (the planner's view)
 
@@ -314,7 +322,7 @@ RAG reduces made-up answers. It does **not** transfer responsibility: a person s
 | Problem | Fix |
 |---|---|
 | `Cannot reach Ollama` / connection refused | Open the Ollama app (Linux: `ollama serve`) |
-| `model "llama3.2" not found` | `ollama pull llama3.2` |
+| `model "llama3.2" not found`, or `404 Not Found for url .../api/chat` | The model isn't downloaded: `ollama pull <model name>` (the agent needs `ollama pull qwen3:4b`) |
 | `The database is empty` | `python ingest.py` |
 | Nonsense search results after changing models | You changed `EMBED_MODEL` — re-run `python ingest.py` |
 | Very slow or out of memory | Use `llama3.2:1b` in `config.py`; close other apps |
