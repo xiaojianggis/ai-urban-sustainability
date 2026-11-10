@@ -1,4 +1,4 @@
-# Lab 12 · Local AI and RAG (about 20 minutes)
+# Lab 12 · Local AI and RAG
 
 Run a language model **on your own laptop**, then have it answer questions from **your own documents**
 (the zoning code of a fictional city, Elmwood), with citations and without sending anything to the internet.
@@ -9,17 +9,10 @@ Run a language model **on your own laptop**, then have it answer questions from 
 
 This is **RAG (Retrieval-Augmented Generation)**: *search first, then write*.
 
-| Step | What you do | Time |
-|---|---|---|
-| 1 | Set up | 7 min (mostly downloads) |
-| 2 | Chat with a model on your laptop | 3 min |
-| 3 | RAG in 40 lines | 3 min |
-| 4 | The Elmwood planning assistant | 4 min |
-| 5 | RAG inside an agent | 3 min |
 
 ---
 
-## 1. Set up (7 min)
+## 1. Set up
 
 You need a laptop with 8 GB of RAM or more, and about 5 GB of free disk space.
 
@@ -44,7 +37,7 @@ You need a laptop with 8 GB of RAM or more, and about 5 GB of free disk space.
 
 ---
 
-## 2. Chat with a model on your laptop (3 min)
+## 2. Chat with a model on your laptop
 
 ```bash
 ollama run llama3.2
@@ -61,7 +54,7 @@ It should say *"Ollama is running"*. Our scripts send it requests with Python's 
 
 ---
 
-## 3. RAG in 40 lines (3 min)
+## 3. RAG in 40 lines
 
 A bare model asked about Elmwood's height limit will confidently *invent* a number, because it has never seen Elmwood.
 RAG fixes that by giving it the right passage first. Open [`minimal_rag.py`](minimal_rag.py) and run:
@@ -83,7 +76,7 @@ plain Python does the search.
 
 ---
 
-## 4. The Elmwood planning assistant (4 min)
+## 4. The Elmwood planning assistant
 
 The same idea, with five real-length documents in [`data/`](data/) and a chat page:
 
@@ -102,7 +95,7 @@ The settings (chunk size, top-k, models) are all in [`config.py`](config.py).
 
 ---
 
-## 5. RAG inside an agent (3 min)
+## 5. RAG inside an agent
 
 In Lab 11, an agent was a model in a loop that calls tools. Here, **search is one of the tools**, along with a calculator,
 and the model decides when to use them:
