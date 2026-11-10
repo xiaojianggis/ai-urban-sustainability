@@ -1,0 +1,5 @@
+requests
+chromadb>=0.5
+streamlit
+pypdf
+psutil
