@@ -1,4 +1,4 @@
-# Lab 12 · Local AI and RAG
+# Lab 12 · Local LLMs and RAG
 
 Run a language model **on your own laptop**, then have it answer questions from **your own documents**
 (the zoning code of a fictional city, Elmwood), with citations and without sending anything to the internet.
