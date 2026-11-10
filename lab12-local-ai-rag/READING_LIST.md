@@ -18,7 +18,7 @@ is on the list.
    <https://www.anthropic.com/news/contextual-retrieval>
    A readable, practical explanation of why plain chunk-and-embed retrieval fails, and how adding context
    to each chunk, keyword search (BM25) and re-ranking fix it.
-   *Why:* matches the "When retrieval misses: five fixes" slide; no math required.
+   *Why:* the practical fixes when retrieval misses; no math required.
 
 3. ★ **Kapoor, S., Bommasani, R. et al. (2024). On the Societal Impact of Open Foundation Models.** *ICML 2024.*
    <https://arxiv.org/abs/2403.07918>
@@ -47,7 +47,7 @@ is on the list.
 
 7. **Karpukhin, V. et al. (2020). Dense Passage Retrieval for Open-Domain Question Answering.** *EMNLP 2020.*
    <https://arxiv.org/abs/2004.04906>
-   The paper behind embedding-based retrieval (the "nearby means similar" idea in Part 3).
+   The paper behind embedding-based retrieval (the "nearby means similar" idea).
    *Why:* for students who want to know where embeddings for search came from.
 
 8. **Asai, A. et al. (2024). Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.** *ICLR 2024.*
@@ -58,12 +58,12 @@ is on the list.
 9. **Edge, D. et al. (2024). From Local to Global: A Graph RAG Approach to Query-Focused Summarization.** Microsoft Research.
    <https://arxiv.org/abs/2404.16130>
    Builds a knowledge graph from documents so the system can answer "summarise everything" questions that top-k retrieval cannot.
-   *Why:* directly relevant to Exercise 4 (summarising all public comments).
+   *Why:* relevant to summarising all public comments, which top-k retrieval handles poorly.
 
 10. **Es, S. et al. (2024). RAGAS: Automated Evaluation of Retrieval Augmented Generation.** *EACL 2024 (demo).*
     <https://arxiv.org/abs/2309.15217>
     Measures faithfulness, answer relevance and context relevance without hand-labelled answers.
-    *Why:* pairs with the "Validating a RAG system" section of the tutorial.
+    *Why:* a way to check whether a RAG system actually works.
 
 ---
 
@@ -77,7 +77,7 @@ is on the list.
 12. **Singh, A. et al. (2025). Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG.**
     <https://arxiv.org/abs/2501.09136>
     Classifies agentic RAG designs (single agent, multi-agent, hierarchical, graph-based) and their uses.
-    *Why:* the reference for Part 4 of the lecture.
+    *Why:* the reference for RAG inside agents.
 
 ---
 
@@ -86,7 +86,7 @@ is on the list.
 13. **Solaiman, I. (2023). The Gradient of Generative AI Release: Methods and Considerations.** *FAccT 2023.*
     <https://arxiv.org/abs/2302.04844>
     Release is not open vs. closed but a gradient, from fully closed to fully open.
-    *Why:* the conceptual basis for the "closed / open weights / open source" slide.
+    *Why:* the conceptual basis for "closed / open weights / open source".
 
 14. **Liesenfeld, A. & Dingemanse, M. (2024). Rethinking Open Source Generative AI: Open-Washing and the EU AI Act.** *FAccT 2024.*
     <https://facctconference.org/static/papers24/facct24-120.pdf>
